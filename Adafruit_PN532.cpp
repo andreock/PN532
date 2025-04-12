@@ -812,7 +812,7 @@ bool Adafruit_PN532::EMVinDataExchange(uint8_t *send, uint8_t sendLength,
 
       length -= 3; 
 
-      for (i = 0; i < length; ++i) {
+      for (size_t i = 0; i < length; ++i) {
         response[i] = pn532_packetbuffer[8 + i];
       }
 
